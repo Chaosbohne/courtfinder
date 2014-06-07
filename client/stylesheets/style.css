@@ -1,0 +1,99 @@
+
+#map-canvas img{max-width:none}
+
+#map-canvas { height: 100% }
+#map {height: 30em; width: 100%;max-height:100%;}
+
+#map-canvas-detail img{max-width:none}
+
+#map-canvas-detail { height: 100% }
+#map-detail {height: 30em; width: 100%;max-height:100%;}
+
+
+.btn{
+  height: 46px;
+}
+
+.btn-large {
+  font-size: 1em;
+}
+
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+	margin-top: 0px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url(/glyphicons-halflings.png);
+}
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+  background-image: url(/glyphicons-halflings-white.png);
+}
+
+
+.navbar .brand {
+  color: #ce5824;
+}
+
+.navbar-text {
+  color: #ce5824;
+}
+.navbar-link {
+  color: #ce5824;
+}
+.navbar-link:hover,
+.navbar-link:focus {
+  color: #333333;
+}
+
+.navbar .nav > li > a {
+  color: #ce5824;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #333333;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #ce5824;
+}
+
+
+
+.checkin-username-input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px !important;
+}
+
+.well span:last-child hr {
+  display: none;
+}
+
+
+.btn .btn-block .btn-primary .load-more .vertical-middle-text {
+  vertical-align: middle !important;
+  font-size:4em;
+}

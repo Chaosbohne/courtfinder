@@ -1,0 +1,36 @@
+<template name="postDetail">
+  <div class="post">
+    <div class="post-content">
+    
+      <br>
+      <div class="well">
+        <div class="title">Titel:<span style="font-weight:normal;"> {{title}}</span></div>        
+        <div class="description">Beschreibung: <span style="font-weight:normal;">{{description}}</span></div>
+        {{#if isDistance}}
+          <div class="distance">Entfernung: <span style="font-weight:normal;">{{distanceMeasurement distance}}</span></div>
+        {{/if}}        
+      </div>
+      
+
+      <div id="map-detail">
+        <div id="map-canvas-detail"></div>
+      </div>
+
+      <a href="{{checkinPagePath this}}" class="btn btn-large btn-block btnCheckin">Checkin</a>
+      <br>
+      <div class="alert alert-info">
+        <b>{{joinCount}}</b> Spieler befinden sich auf diesem Platz
+      </div>
+      
+      {{#if joinCount}}
+        <div class="joiners">
+          <div class="well">
+            {{#each joiners}}
+              {{> join}}
+            {{/each}}
+          </div>      
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</template>

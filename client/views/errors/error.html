@@ -1,0 +1,13 @@
+<template name="error">
+  {{#if isError}}
+    <div class="alert alert-error">
+      <button type="button" class="close" date-dismiss="alert">&times;</button>
+      {{message}}
+    </div>
+  {{else}}
+    <div class="alert alert-success">
+      <button type="button" class="close" date-dismiss="alert">&times;</button>
+      {{message}}   
+    </div>  
+  {{/if}}
+</template>

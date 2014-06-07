@@ -1,0 +1,45 @@
+<template name="postsList">
+  <div class="posts">
+    <ul class="nav nav-tabs nav-stacked">
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
+    </ul >
+    {{#if postsReady}}
+      {{#unless allPostsLoaded}}
+        <a class="btn btn-block btn-primary load-more" href="#">Lade mehr</a>     
+      {{/unless}}
+    {{else}}
+      <div>{{> spinner}}</div>
+    {{/if}}
+  </div>
+</template>
+
+<template name="nearPostsList">
+  <div class="posts">
+    <ul class="nav nav-tabs nav-stacked">
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
+    </ul>
+    {{#if postsReady}}
+      {{#unless allPostsLoaded}}
+        <a class="btn btn-block btn-primary load-more" href="#">Lade mehr</a>     
+      {{/unless}}
+    {{else}}
+      <div>{{> spinner}}</div>
+    {{/if}}
+  </div>
+</template>
+
+<template name="mapPostsList">
+  <div id="map">
+    <div id="map-canvas"></div>
+  </div>
+  
+  <div class="well">
+    <img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png"> Ich
+    <hr>
+    <img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png"> Basketballplätze
+  </div>
+</template>

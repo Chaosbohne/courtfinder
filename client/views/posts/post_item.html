@@ -1,0 +1,15 @@
+<template name="postItem">
+  <div class="post">
+    <div class="post-content">
+      <li>
+        <a href="{{postPagePath this}}" class="btn btn-large btn-block">
+          <div class="pull-left title">{{shortName}}</div>
+          <div class="pull-right">
+              <span class="badge badge-warning joinCount">{{joinCount}}</span>
+              <span class="badge"><i class="icon-chevron-right icon-white"></i></span>
+           </div>        
+        </a>
+      </li>
+    </div>
+  </div>
+</template>

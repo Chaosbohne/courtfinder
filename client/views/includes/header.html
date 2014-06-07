@@ -1,0 +1,14 @@
+<template name="header">
+  <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <ul class="nav">
+        {{#if isWidth}}
+          <a class="brand" href="{{postsPath}}"><img src="/wortbildmarke.png" width="100" height="100" alt="logo" /></a>  
+        {{/if}}
+        <li><a  href="{{postsPath}}">TopPosts</a></li>
+        <li><a  href="{{nearpostsPath}}">NearPosts</a></li>  
+        <li><a  href="{{mappostsPath}}">Map</a></li> 
+      </ul>
+    </div>
+  </div>  
+</template>

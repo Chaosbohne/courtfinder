@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BasketballApp</title>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>  
+</head>
+<body>
+  
+    <div class="resize-head row-fluid">
+      {{> header}}
+    </div>      
+    <div class="error">
+      {{> errorsList}}
+    </div>    
+    <div id="main">
+      {{renderPage}}
+    </div>
+  
+</body>
